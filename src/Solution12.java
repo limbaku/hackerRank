@@ -9,11 +9,15 @@ class Node{
     }
 
 }
-class Solution
+class Solution12
 {
     public static  Node insert(Node head,int data)
     {
-        //Complete this method
+        Node node = new Node(data);
+        node.next=head;
+        head=node;
+
+        return head;
     }
 
     public static void display(Node head)
@@ -37,5 +41,4 @@ class Solution
         display(head);
 
     }
-}
 }
